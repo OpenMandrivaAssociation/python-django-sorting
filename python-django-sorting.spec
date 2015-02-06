@@ -1,7 +1,7 @@
 %define realname    django-sorting
 %define name	    python-%{realname}
 %define version 0.1
-%define release %mkrel 1
+%define release 2
 
 Name: %{name}
 Version: %{version}
