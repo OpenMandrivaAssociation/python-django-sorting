@@ -1,17 +1,13 @@
 %define realname    django-sorting
-%define name	    python-%{realname}
-%define version 0.1
-%define release 2
 
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name:		python-%{realname}
+Version:	0.1
+Release:	3
 Summary:        A Django application for easy sorting
 Group:          Development/Python
 License:        BSD
-URL:            http://pypi.python.org/pypi/django-sorting
+URL:            https://files.pythonhosted.org/packages/source/d/django-sorting/django-sorting-%{version}.tar.gz
 Source:         %{realname}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 BuildRequires:  python-devel python-setuptools
 Requires:       python-django
@@ -21,7 +17,7 @@ Django-sorting allows for easy sorting, and sorting links generation
 without modifying your views.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%autosetup -p1 -n %{realname}-%{version}
 find . -name \*._* -exec rm {} +
 find . -name \*.buildinfo* -exec rm {} +
 
