@@ -2,7 +2,7 @@
 
 Name:		python-%{realname}
 Version:	0.1
-Release:	3
+Release:	4
 Summary:        A Django application for easy sorting
 Group:          Development/Python
 License:        BSD
